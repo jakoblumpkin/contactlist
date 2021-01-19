@@ -1,0 +1,62 @@
+#headname{
+    position:relative;
+    top:17px;
+    text-align:center;
+    font-family: 'Nixie One', cursive;
+}
+
+#headImage{
+    font-size: 33px;
+}
+
+#Rels{
+    color:#F0F8FF;
+    text-align:center;
+}
+#Notes{
+    color:#F0F8FF;
+}
+
+#phoneicon{
+    font-size: 40px;
+    color:#F0F8FF;
+}
+
+#Mess{
+    color:#F0F8FF;
+    position:relative;
+    left:80%;
+    font-size:280%;
+}
+
+#delete{
+    color:#F0F8FF;
+
+}
+
+#dB{
+    width:30%;
+    text-color:#F0F8FF;
+    color:#F0F8FF;
+    background-color: #ff8080;
+    height:40px;
+    position: relative;
+    top:200px;
+    border-radius:10px;
+}
+
+#BackC{
+    height:25px;
+    width:35%;
+    position:relative;
+    left:60%;
+    border-radius:8px;
+    background-color:#003c3c;
+    color:#F0F8FF;
+}
+
+#arrow{
+    position:relative;
+    right:5%;
+
+}

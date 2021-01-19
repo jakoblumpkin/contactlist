@@ -1,0 +1,83 @@
+#header{
+    background-color:#F0F8FF;
+}
+
+#headTitle{
+    text-align: center;
+    font-family: 'Nixie One', cursive;
+    height: 75px;
+}
+
+#infoCol{
+    position:relative;
+    left:5%;
+    top:50px;
+    width:60%
+}
+
+#perIcon{
+    color: #F0F8FF;
+}
+
+.rowrow{
+    display: flex;
+    position: relative;
+    top: 5px;
+}
+
+.titleN{
+    color: #F0F8FF;
+    position: relative;
+    left: 3%;
+}
+
+.input{
+position:relative;
+left:10%;
+}
+
+#relIcon{
+    color: #F0F8FF;
+}
+
+#phoneI{
+    color: #F0F8FF;
+    font-size:25px;
+}
+
+#saveB{
+    height:35px;
+    width:40%;
+    color:black;
+    border-radius: 20px;
+    background-color:#ccffcc;
+}
+
+#checkB{
+    color:#003c3c;
+}
+
+#cancelB{
+    height:35px;
+    width:40%;
+    position:relative;
+    right:-20%;
+    color:black;
+    border-radius: 20px;
+    background-color:#ffe6e6;
+}
+
+#cIcon{
+     color: #003c3c;
+}
+
+#nIcon{
+    color: #F0F8FF;
+    font-size: 25px;
+}
+
+#saved{
+   position:relative;
+   left:2%;
+   top: 170px;
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#hello{
+    color:red;
+}
+
+#mobile {
+    border-style: 1px solid;
+    width: 425px;
+    margin: auto;
+    background-color: #003c3c;
+    min-height: 514px;
+}
+
+.headT {
+    position: relative;
+    text-align:center;
+    right:auto;
+    font-family: 'Nixie One', cursive;
+}
+
+.topC{
+    background-color: #F0F8FF;
+    height: 75px;
+    border-bottom: 1px solid;
+}
+
+.text {
+    color:white;
+}
+
+.contactDisplay{
+    display:flex;
+    height: 40px;
+    border-bottom: solid;
+    border-color:white;
+}
+#boss{
+    display:flex;
+    height: 40px;
+    border-bottom: solid;
+    border-color:white;
+}
+#icon{
+    color: #F0F8FF;
+    font-size: 32px;
+    position: relative;
+    left:1%;
+    top:3px;
+}
+
+#contactName{
+    position:relative;
+    bottom:-7px;
+    color: white;
+    left: 3%;
+}
+
+#number{
+    color:white;
+    position:relative;
+    left:45%;
+    font-size:70%;
+}
+
+#addSign{
+    font-size: 150%;
+    color: #003c3c;
+    position: relative;
+    bottom:-26%;
+    left:1%;
+
+}
+
+

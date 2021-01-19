@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/c6234539c7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/newcontact.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/viewcontact.css'%}"/>
+</head>
+<body>
+    <section id="mobile">
+        {% block content %}
+        <div class="topC">
+            <h1 class="headT">Contacts</h1>
+            <a href="newcontact/"><i id="addSign" class="fas fa-plus-circle"></i></a>
+        </div>
+        {% for i in contactP %}
+        <form >
+             <a href="/viewcontact/{{i.id}}/" style="text-decoration: none;"><div class="contactDisplay">
+                 <i id="icon" class="fas fa-address-book"></i>
+                 <p id="contactName">{{i.name}}</p>
+                 <p id="number">{{i.relationship}}</p>
+             </div></a>
+        </form>
+
+        <script>
+          document.getElementByClassName('contactDisplay').onmousemove=function(){
+          this.style.height="60px";
+          this.onmouseout=function(){
+          this.style.height="40px";
+          }
+          this.onclick=function(){
+          this.color="red";
+          }
+          }
+        </script>
+        {% endfor %}
+        {% endblock content %}
+    </section>
+</body>
+
+
+<script>
+   /* document.getElementById("contactDisplay").onmousemove=function(){
+          this.style.height="60px";
+          this.onmouseout=function(){
+          this.style.height="40px";
+          }
+          this.onclick=function(){
+          this.color="red";
+          }
+    }*/
+
+
+
+
+
+
+    document.getElementById("addSign").onmouseover=function(){
+         this.style.fontSize="180%";
+         this.onmouseout=function(){
+          this.style.fontSize="150%";
+          }
+    }
+
+
+
+</script>
+
+
+
+</html>

@@ -1,0 +1,70 @@
+{% extends 'index.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<div id="header">
+    <h1 id="headTitle">Add Contact</h1>
+</div>
+<form id="infoCol" method="POST" action="/newcontact/">{% csrf_token %}
+    <div class="rowrow">
+        <i id="perIcon" class="fas fa-user"></i>
+        <h4 class="titleN">Name: </h4>
+        <input class="input" type="text" placeholder="name" name="n">
+    </div>
+
+    <div style="position:relative; top:30px;" class="rowrow">
+        <i id="relIcon" class="fas fa-user-friends"></i>
+         <h4 class="titleN">Relationship: </h4>
+        <input class="input" type="text" placeholder="relationship" name="r">
+    </div>
+
+    <div style="position:relative; top:60px;" class="rowrow">
+        <i id="phoneI" class="fas fa-phone-square-alt"></i>
+         <h4 class="titleN">Number: </h4>
+        <input class="input" type="text" placeholder="XXX-XXX-XXXX" name="num">
+    </div>
+    <div style="position:relative; top:90px;" class="rowrow">
+        <i id="nIcon"class="fas fa-sticky-note"></i>
+         <h4 class="titleN">Notes: </h4>
+        <textarea class="input" rows="5" cols="100"type="text" placeholder="notes" name="not"></textarea>
+    </div>
+
+
+    <div class="rowrow" style="position:relative; top:150px; width:150%;">
+        <button id="saveB" name="savecontact"><i id="checkB" class="fas fa-check"></i>Save Contact</button>
+        <button  id="cancelB" name="cancelcontact"><i id="cIcon" class="fas fa-times"></i>Cancel</button>
+    </div>
+    <p id="saved"></p>
+
+
+</form>
+
+
+
+
+<script>
+    var savedtext=document.getElementById("saved");
+    document.getElementById("saveB").onclick=function(){
+          savedtext.innerHTML='Saved!';
+          savedtext.style.color="green";
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+</body>
+</html>

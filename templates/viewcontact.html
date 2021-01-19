@@ -1,0 +1,31 @@
+{% extends 'index.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+
+<div class="topC">
+    <div style="display:flex;">
+            <i id="headImage" class="far fa-address-card"></i>
+        <a href="/" style="width:100%;"><button id="BackC"><i id="arrow"class="fas fa-arrow-left"></i>Back to Contacts</button></a>
+        </div>
+    <h1 id="headname">{{obj.name}}</h1>
+</div>
+<h2 id="Rels">{{obj.relationship}}</h2>
+
+<h2 id="Notes">Notes:</h2>
+    <p style="color:#F0F8FF;">{{obj.notes}}</p>
+<div style="display:flex;">
+    <i id="phoneicon"class="fas fa-phone"></i>
+    <i id="Mess" class="fas fa-sms"></i>
+</div>
+<a href="/delete/{{obj.id}}/"><button id="dB"><i id="delete"class="far fa-trash-alt"></i>  Delete Contact</button></a>
+
+
+{% endblock content %}
+</body>
+</html>
